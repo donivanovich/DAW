@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Prueba formularios/eventos</h1>
+    </header>
+    <main>
+        <form method="POST" action="./index.html" id="form1">
+            <div class="form-input-container">
+                <label for="valor1">Texto1: </label>
+                <input id="valor1" class="input1" type="text" name="valor1">
+            </div>
+            <div class="form-input-container">
+                <label>Texto2: </label>
+                <textarea onchange="pruebaEvento()" name="texto1"></textarea>
+            </div>
+            <div class="form-input-container">
+                <label>Numero1: </label>
+                <input class="input1" type="number" name="valor2">
+            </div>
+            <div class="form-input-container">
+                <label>Check: </label>
+                <input type="checkbox" name="datos1[]" value="Si"><span>Si</span>
+                <input type="checkbox" name="datos1[]" value="No"><span>No</span>
+                <input type="checkbox" name="datos1[]" value="Otro"><span>Otro</span>
+            </div>
+            <div class="form-input-container">
+                <label>Radio: </label>
+                <input type="radio" name="datos2" value="Si"><span>Si</span>
+                <input type="radio" name="datos2" value="No"><span>No</span>
+                <input type="radio" name="datos2" value="Otro"><span>Otro</span>
+            </div>
+            <div class="form-input-container">
+                <label>Numero2: </label>
+                <input class="input1" type="range" min="0" max="10" name="Numero2">
+            </div>
+
+            <input type="submit" value="enviar!">
+        </form>
+    </main>
+    <footer>
+        <script src="./scripts.js"></script>
+    </footer>
+</body>
+</html>
