@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h1>Guía visual de estilos HTML</h1>
+            <p>Ejemplos prácticos para textos, listas, tablas y formularios</p>
+        </div>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#tablas">Tablas</a></li>
+            <li><a href="#formularios">Formularios</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenedor">
+        <section id="textos" class="tarjeta">
+            <h2>1. Textos</h2>
+
+            <p class="introduccion">
+                Esta sección muestra diferentes estilos aplicables a los elementos
+                de texto más habituales de HTML.
+            </p>
+
+            <h3>Títulos y párrafos</h3>
+
+            <p>
+                Este es un párrafo normal con una parte en
+                <strong>negrita</strong> y otra parte en <em>cursiva</em>.
+            </p>
+
+            <p>
+                También podemos utilizar
+                <span class="texto-destacado">texto destacado</span>,
+                <mark>texto resaltado</mark> y
+                <small class="texto-pequeno">texto pequeño</small>.
+            </p>
+
+            <h3>Cita y código</h3>
+
+            <blockquote>
+                “El buen diseño no consiste únicamente en cómo se ve una página,
+                sino también en cómo funciona y se utiliza.”
+            </blockquote>
+        </section>
+
+        <section id="listas" class="tarjeta">
+            <h2>2. Listas</h2>
+
+            <div class="listas-grid">
+                <div>
+                    <h3>Lista desordenada</h3>
+
+                    <ul class="lista-comun lista-desordenada">
+                        <li>HTML semántico</li>
+                        <li>CSS moderno</li>
+                        <li>Diseño responsive</li>
+                        <li>Accesibilidad web</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Lista ordenada</h3>
+
+                    <ol class="lista-comun lista-ordenada">
+                        <li>Planificar la estructura</li>
+                        <li>Crear el HTML</li>
+                        <li>Aplicar estilos CSS</li>
+                        <li>Probar la página</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3>Lista de definiciones</h3>
+
+                    <dl class="lista-definiciones">
+                        <dt>HTML</dt>
+                        <dd>Estructura y contenido de la página.</dd>
+
+                        <dt>CSS</dt>
+                        <dd>Presentación y diseño visual.</dd>
+
+                        <dt>Responsive</dt>
+                        <dd>Adaptación a diferentes tamaños de pantalla.</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="tablas" class="tarjeta">
+            <h2>3. Tablas</h2>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <caption>
+                        Ejemplo de tabla de cursos disponibles
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th>Curso</th>
+                            <th>Nivel</th>
+                            <th>Duración</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>HTML básico</td>
+                            <td>Inicial</td>
+                            <td>20 horas</td>
+                            <td>
+                                <span class="estado estado-activo">Disponible</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>CSS avanzado</td>
+                            <td>Intermedio</td>
+                            <td>30 horas</td>
+                            <td>
+                                <span class="estado estado-activo">Disponible</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Avanzado</td>
+                            <td>40 horas</td>
+                            <td>
+                                <span class="estado estado-pendiente">Próximamente</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="formularios" class="tarjeta">
+            <h2>4. Formularios</h2>
+
+            <form class="formulario">
+                <div class="fila-formulario">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                </div>
+
+                <div class="fila-formulario">
+                    <div class="campo">
+                        <label for="curso">Curso de interés</label>
+
+                        <select id="curso" name="curso">
+                            <option value="">Selecciona una opción</option>
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="javascript">JavaScript</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Modalidad preferida</legend>
+
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="modalidad" value="online" checked>
+                            Online
+                        </label>
+
+                        <label class="opcion">
+                            <input type="radio" name="modalidad" value="presencial">
+                            Presencial
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias</legend>
+
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="checkbox" name="noticias">
+                            Recibir novedades
+                        </label>
+
+                        <label class="opcion">
+                            <input type="checkbox" name="terminos" required>
+                            Acepto los términos
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+
+                <div class="botones">
+                    <button type="submit">Enviar formulario</button>
+                    <button type="reset">Limpiar campos</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ejemplo educativo de HTML y CSS</p>
+    </footer>
+</body>
+
+</html>
