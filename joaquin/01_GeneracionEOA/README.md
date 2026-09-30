@@ -35,6 +35,8 @@ eth-account==0.14.0
 Para instalar desde el archivo y ejecutar el programa:
 
 ```bash
+python -m venv .venv
+.venv\Scripts\activate
 python -m pip install -r requirements.txt
 python generar_eoa.py
 ```
@@ -113,7 +115,7 @@ Una cuenta importada por clave privada puede requerir que vuelva a importar esa 
 
 ## 6. Address y evidencias
 
-**Dirección EOA definitiva:** `0xF2E2EA90C03E13dE4Fd71527062f6a54481B20Ac`
+**Dirección EOA definitiva:** `0x9144B2AdA8Bd67b74930660F7A358BF977E42606`
 
 - `capturas/ejecucion.png`: salida real del código, clave parcialmente oculta y address definitivo.
 - `capturas/metamask.png`: cuenta importada con ese mismo address visible.
