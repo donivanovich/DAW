@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  background-color: hsl(217, 98%, 23%);
+  color: white;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+}
+
