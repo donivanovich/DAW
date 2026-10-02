@@ -1,0 +1,91 @@
+@import url("./node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import url("./node_modules/bootstrap-icons/font/bootstrap-icons.min.css");
+
+
+:root{
+    --primaryColor: #DC0A2D;
+    --secondaryColor: #30A7D7;
+    --tertiaryColor: #51AD60;
+    --neutral: #232323;
+    --textColor : white;
+    --bodyBgcolor: #0d0d0d;
+    --selectSearchInputBg: #1f2020;
+}
+
+
+*{
+    font-family: "Space Mono", monospace;
+}
+ 
+/***************************************************************************************/
+
+
+.bg-primary{
+    background-color: var(--primaryColor) !important;
+}
+
+
+/***************************************************************************************/
+
+body{
+    background-color: var(--bodyBgcolor);
+}
+
+.logo-container span{
+    color: var(--textColor);
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.form-search-input-container .form-control{
+    background-color: var(--selectSearchInputBg);
+    border-color: transparent !important;
+    border-radius: 5px !important;
+    color: white;
+}
+
+.form-search-input-container .form-control::placeholder{
+    color: rgb(196, 196, 196);
+}
+
+
+.form-search-input-container .form-control:active, .form-search-input-container .form-control:focus{
+    box-shadow: 0 0 0 .05rem rgba(255,255,255,.4);
+    border-color: transparent !important;
+}
+
+
+.form-search-input-container .input-group-text{
+    border-radius: 24px !important;
+    margin-right: 15px;
+    background-color: #dc0a2d;
+    border-color: transparent !important;
+    padding: 10px;
+}
+
+
+.form-search-input-container .input-group-text i{
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+
+
+@media(min-width: 992px){
+    .navbar-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-menu{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-menu li *{
+        color: white;;
+    }
+}
