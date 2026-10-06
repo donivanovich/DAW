@@ -1,0 +1,71 @@
+.buttons-header {
+    display: flex;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex-direction: row;
+    gap: 25px;
+    margin-right: 10px;
+}
+
+button {
+    display: flex;
+    height: 75%;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #31AF36;
+    color: white;
+}
+
+#add-cart:hover {
+    background-color: #239127;
+}
+
+#add-cart i {
+    font-size: 20px;
+}
+
+#downloads:hover {
+    background-color: rgb(41, 168, 253);
+    color: white;
+}
+
+#cart {
+    background-color: transparent;
+}
+
+#cart:hover i{
+    color: white;
+}
+
+#cart i{
+    font-size: 24px;
+    color: gray;
+}
+
+#up {
+    position: relative; 
+    top: -8px;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#up:hover i {
+    color: white;
+}
+
+#up i {
+    color: gray;
+    font-size: 20px;
+}

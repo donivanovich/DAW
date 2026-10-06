@@ -1,0 +1,18 @@
+button {
+    display: flex;
+    height: 75%;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    color: #9CC9F5;
+    flex-direction: row;
+    gap: 10px;
+    border: 0px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+}
