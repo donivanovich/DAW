@@ -1,0 +1,39 @@
+.pizza-selection{
+    display: flex;
+    height: 640px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.column {
+    display: flex;
+    height: 78%;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    width: 70%;
+    background-color: aqua;
+}
+
+span{
+    font-size: 40px;
+    text-align: center;
+}
+
+.pizzas{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2%;
+}
+
+.pizza {
+    display: flex;
+    height: 100%;
+    width: 20.25%;
+    background-color: rgb(10, 10, 10);
+}

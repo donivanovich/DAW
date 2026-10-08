@@ -1,0 +1,78 @@
+:host{
+    width: 100%;
+    max-height: 753px;
+    color: white;
+}
+
+.carousel{
+    display: flex;
+    background-image: url("/img/slides/slide-1-1920x753.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 753px;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+button {
+    width: 82px;
+    height: 82px;
+    background-color: rgb(128 128 128 / 35%);
+    border: 0px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+
+.left-button{
+    clip-path: polygon(
+        0 0,
+        80% 0,
+        100% 100%,
+        0 100%
+    );
+} 
+
+.right-button{
+    clip-path: polygon(
+        20% 0,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+}
+
+i {
+    font-size: 46px;
+    color: white;
+}
+
+.menu-button{
+    color: black;
+    background-color: yellow;
+    border: 0px;
+    width: 276px;
+    height: 84px;
+}
+
+.menu-button:hover{
+    color: white;
+    background-color: aquamarine;
+    transition: 0.21s;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 347px;
+}
