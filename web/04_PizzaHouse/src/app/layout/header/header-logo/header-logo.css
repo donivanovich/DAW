@@ -1,0 +1,17 @@
+.header-logo {
+    display: flex;
+    width: 81%;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+.header-logo img {
+    display: block;
+    width: 180px;
+    height: auto;
+}
+
+.header-logo img:hover {
+    cursor: pointer;
+}

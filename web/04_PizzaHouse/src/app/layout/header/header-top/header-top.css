@@ -1,0 +1,130 @@
+.header-top {
+    display: flex;
+    flex-direction: row;
+    background-color: #2D394B;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button {
+    display: flex;
+    height: 100%;
+    width: 35%;
+    align-items: center;
+    justify-content: start;
+    background-color: transparent;
+    color: #9CC9F5;
+    flex-direction: row;
+    gap: 10px;
+    border: 0px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color: white;
+}
+
+.back-button i {
+    font-size: 12px;
+}
+
+.devices {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 31%;
+}
+
+.devices i {
+    font-size: 25px;
+    color: gray;
+    cursor: pointer;
+}
+
+.devices i:hover {
+    color: white;
+}
+
+#display {
+    color: white;
+}
+
+
+
+
+
+
+.buttons-header {
+    display: flex;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+    width: 34%;
+    flex-direction: row;
+    gap: 25px;
+    margin-right: 10px;
+}
+
+button {
+    display: flex;
+    height: 75%;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #31AF36;
+    color: white;
+}
+
+#add-cart:hover {
+    background-color: #239127;
+}
+
+#add-cart i {
+    font-size: 20px;
+}
+
+#downloads:hover {
+    background-color: rgb(41, 168, 253);
+    color: white;
+}
+
+#cart {
+    background-color: transparent;
+}
+
+#cart:hover i{
+    color: white;
+}
+
+#cart i{
+    font-size: 24px;
+    color: gray;
+}
+
+#up {
+    position: relative; 
+    top: -8px;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#up:hover i {
+    color: white;
+}
+
+#up i {
+    color: gray;
+    font-size: 20px;
+}

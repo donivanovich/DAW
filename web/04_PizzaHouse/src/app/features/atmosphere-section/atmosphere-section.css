@@ -1,0 +1,70 @@
+.atmosphere-section{
+    display: flex;
+    height: 516px;
+    width: 100%;
+    background-image: url("/img/banners/bg-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    width: 61%;
+    height: 70%;
+    justify-content: end;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    gap: 5%;
+}
+
+button{
+    border: 0px;
+    width: 276px;
+    height: 74px;
+    color: white;
+    background-color: aquamarine;
+    font-size: 15px;
+}
+
+button:hover{
+    color: black;
+    background-color: rgb(255, 255, 0);
+    transition: 0.21s;
+}
+
+.founder{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+span{
+    font-size: 20px;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.gray{
+    color: rgba(128, 128, 128, 0.651);
+}
+
+h3{
+    font-size: 40px;
+    margin: 0px;
+}
+
+p{
+    margin: 0px;
+    font-size: 25px;
+}
