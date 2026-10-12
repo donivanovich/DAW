@@ -5,29 +5,56 @@
   padding-left: 90px;
 }
 
-nav {
+.navigation {
   display: flex;
   width: 67%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
+  align-items: stretch;
 }
 
-nav a {
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button a {
   color: black;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.selector {
+  visibility: hidden;
+  width: 100%;
+  height: 6px;
+  flex-shrink: 0;
+  margin-top: auto;
+  background-color: #6046b6;
+}
+
+.transparent {
+  visibility: hidden;
+  margin-top: auto;
+}
+
+.button:hover .selector,
+.selected {
+  visibility: visible;
 }
 
 i {
   color: black;
   cursor: pointer;
   font-size: 38px;
+  align-self: center;
 }
 
-i:hover{
+i:hover {
   color: yellow;
 }

@@ -1,22 +1,46 @@
+.header-top {
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+  width: 100%;
+}
+
 .header-container {
   display: flex;
   width: 100%;
   flex-direction: row;
-  background-color: #f0eeee93;
+  background-color: #EBEBEB;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-logo {
   display: flex;
-  flex: 0 0 36%;
+  flex: 0 0 36.5%;
   min-width: 0;
   background-color: white;
 
   clip-path: polygon(
     0 0,
     95% 0,
-    100% 100%,
-    0 100%
+    100% 85%,
+    0 85%
   );
+  
+  animation: logo-scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 0px 150px;
+}
+
+@keyframes logo-scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(21px);
+  }
 }
 
 .header-right {
