@@ -52,11 +52,6 @@
     color: white;
 }
 
-
-
-
-
-
 .buttons-header {
     display: flex;
     height: 100%;
@@ -95,7 +90,7 @@ button {
 
 #downloads:hover {
     background-color: rgb(41, 168, 253);
-    color: white;
+    color: #F0F0F0;
 }
 
 #cart {
@@ -127,4 +122,13 @@ button {
 #up i {
     color: gray;
     font-size: 20px;
+}
+
+
+#downloads, #add-cart{
+    padding: 11px 20px;
+}
+
+p{
+    font-family: system-ui;
 }

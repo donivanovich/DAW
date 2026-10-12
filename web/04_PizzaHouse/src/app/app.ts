@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './layout/header/header';
 import { HeroCarousel } from './features/hero-carousel/hero-carousel';
 import { MenuCategories } from './features/menu-categories/menu-categories';
-import { AtmosphereSection } from './features/atmosphere-section/atmosphere-section';
+import { AtmosphereSection } from './features/banner-atmosphere/banner-atmosphere';
 import { PizzaSelection } from './features/pizza-selection/pizza-selection';
 import { BannerSalads } from './features/banner-salads/banner-salads';
 import { Opinions } from './features/opinions/opinions';

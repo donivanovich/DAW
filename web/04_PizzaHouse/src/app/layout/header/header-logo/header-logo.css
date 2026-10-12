@@ -1,17 +1,36 @@
 .header-logo {
     display: flex;
-    width: 81%;
-    height: 100%;
-    justify-content: end;
+    flex: 0 0 36.5%;
+    min-width: 0;
+    background-color: white;
+    justify-content: flex-end;
     align-items: center;
+
+    clip-path: polygon(
+        0 0,
+        95% 0,
+        100% 85%,
+        0 85%
+    );
 }
 
 .header-logo img {
     display: block;
-    width: 180px;
-    height: auto;
+    width: 189px;
+    height: 66px;
+    object-fit: contain;
+    margin-left: 100px;
+    animation: logo-scroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0px 150px;
 }
 
-.header-logo img:hover {
-    cursor: pointer;
+@keyframes logo-scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
 }

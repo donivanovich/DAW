@@ -1,6 +1,6 @@
 .atmosphere-section{
     display: flex;
-    height: 516px;
+    height: 580.84px;
     width: 100%;
     background-image: url("/img/banners/bg-4.jpg");
     background-repeat: no-repeat;
@@ -13,8 +13,8 @@
 
 .container {
     display: flex;
-    width: 61%;
-    height: 70%;
+    width: 63%;
+    height: 58.68%;
     justify-content: end;
 }
 
@@ -33,7 +33,7 @@ button{
     height: 74px;
     color: black;
     background-color: rgb(255, 255, 0);
-    font-size: 15px;
+    font-size: 16px;
 }
 
 button:hover{
@@ -48,7 +48,7 @@ button:hover{
 }
 
 span{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .blueviolet{
