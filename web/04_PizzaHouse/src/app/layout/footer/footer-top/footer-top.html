@@ -1,1 +1,42 @@
-<p>footer-top works!</p>
+<div class="footer-top">
+  <div class="footer-col">
+    <h3>What We Offer</h3>
+    <div class="links-grid">
+      <ul>
+        <li><a href="#">Pizzas</a></li>
+        <li><a href="#">Burgers</a></li>
+        <li><a href="#">Salads</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Drinks</a></li>
+        <li><a href="#">Seafood</a></li>
+        <li><a href="#">Drinks</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-col">
+    <h3>Information</h3>
+    <div class="links-grid">
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Latest News</a></li>
+        <li><a href="#">Our Menu</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-col newsletter-col">
+    <h3>Newsletter</h3>
+    <p>Sign up today for the latest news and updates.</p>
+    <form class="newsletter-form" (submit)="$event.preventDefault()">
+      <input type="email" placeholder="Enter your E-mail" required />
+      <button type="submit">SUBSCRIBE</button>
+    </form>
+  </div>
+</div>

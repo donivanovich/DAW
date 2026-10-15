@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 240px 1.5fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 260px);
+  gap: 15px;
+  width: 100%;
+  padding: 15px;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-item.item-vertical {
+  grid-row: span 2;
+  grid-column: 1;
+}
+
+.gallery-item.item-large {
+  grid-row: span 2;
+  grid-column: 2;
+}
+
+.gallery-item.item-wide {
+  grid-column: span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 18px 22px;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.overlay-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.overlay-content p {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: #52c293;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.gallery-item:hover .overlay {
+  transform: translateY(0);
+}

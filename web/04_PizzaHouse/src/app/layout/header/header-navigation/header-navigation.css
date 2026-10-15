@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .button a {
@@ -36,6 +37,75 @@
   flex-shrink: 0;
   margin-top: auto;
   background-color: #6046b6;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 290px;
+  background-color: white;
+  border-bottom: 7px solid #6042b5;
+  z-index: 1000;
+  margin: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+/* Mostrarlo al hacer hover */
+.button:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Enlaces del menú */
+.dropdown a {
+  display: block;
+  padding: 22px 30px;
+  color: #111;
+  background-color: white;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown a:last-child {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  background-color: #f7f7f7;
+}
+
+.dropdown-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.dropdown-column h3 {
+  margin: 15px 0 10px;
+  color: #6042b5;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.dropdown-column a {
+  color: #111;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown-column a:hover {
+  color: #6042b5;
 }
 
 .transparent {

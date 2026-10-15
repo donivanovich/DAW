@@ -1,1 +1,39 @@
-<p>book-tables works!</p>
+<div class="opinions">
+  <div class="column">
+    <span>BOOK YOUR TABLE</span>
+
+    <form class="form-container">
+      <div class="form-row">
+        <div class="input-group">
+          <input type="text" placeholder="Your Name*" required />
+        </div>
+
+        <div class="input-group">
+          <input type="email" placeholder="Your E-mail*" required />
+        </div>
+
+        <div class="input-group">
+          <select required>
+            <option value="" disabled selected>Select a Service</option>
+            <option value="lunch">Dine-In</option>
+            <option value="dinner">Carry-Out</option>
+            <option value="event">Event Catering</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <textarea placeholder="Message" rows="5"></textarea>
+      </div>
+
+      <div class="form-footer">
+        <button type="submit" class="btn-send">SEND MESSAGE</button>
+        
+        <div class="notice">
+          <i class="bi bi-quote"></i>
+          <p class="notice-text">Please reserve your table at<br>least 1 day in advance.</p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
