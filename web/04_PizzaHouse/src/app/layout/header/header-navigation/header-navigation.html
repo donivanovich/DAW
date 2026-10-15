@@ -20,20 +20,69 @@
 
     <div class="button">
       <div class="transparent"></div>
-      <a href="#">News</a>
+      <a>News</a>
       <div class="selector"></div>
+      <div class="dropdown">
+        <a routerLink="/news/grid-blog">GRID BLOG</a>
+        <a routerLink="/news/masonry-blog">MASONRY BLOG</a>
+        <a routerLink="/news/blog-post">BLOG POST</a>
+      </div>
     </div>
 
     <div class="button">
       <div class="transparent"></div>
-      <a href="#">Shop</a>
+      <a routerLink="/shop">Shop</a>
       <div class="selector"></div>
+      <div class="dropdown">
+        <a routerLink="/shop/single-product">SINGLE PRODUCT</a>
+        <a routerLink="/shop/checkout">CHECKOUT</a>
+        <a routerLink="/shop/cart-page">CART PAGE</a>
+      </div>
     </div>
 
-    <div class="button">
+    <div class="button pages-button">
       <div class="transparent"></div>
-      <a href="#">Pages</a>
+      <a>Pages</a>
       <div class="selector"></div>
+
+      <div class="dropdown pages-dropdown">
+        <div class="dropdown-column">
+          <h3>SERVICES</h3>
+          <a routerLink="/services">Services</a>
+          <a routerLink="/services/2">Services 2</a>
+          <a routerLink="/services/3">Services 3</a>
+          <a routerLink="/services/4">Services 4</a>
+          <a routerLink="/services/single-service">Single service</a>
+        </div>
+
+        <div class="dropdown-column">
+          <h3>ADDITIONAL PAGES</h3>
+          <a routerLink="/pages/404">404 page</a>
+          <a routerLink="/pages/coming-soon">Coming soon</a>
+          <a routerLink="/pages/counters">Counters</a>
+          <a routerLink="/pages/icon-lists">Icon lists</a>
+          <a routerLink="/pages/search-results">Search results</a>
+          <a routerLink="/pages/privacy-policy">Privacy policy</a>
+          <a routerLink="/pages/contacts">Contacts</a>
+        </div>
+
+        <div class="dropdown-column">
+          <h3>ELEMENTS</h3>
+          <a routerLink="/elements/typography">Typography</a>
+          <a routerLink="/elements/buttons">Buttons</a>
+          <a routerLink="/elements/forms">Forms</a>
+          <a routerLink="/elements/tabs-accordions">Tabs and accordions</a>
+          <a routerLink="/elements/progress-bars">Progress bars</a>
+          <a routerLink="/elements/grid-system">Grid system</a>
+          <a routerLink="/elements/tables">Tables</a>
+        </div>
+
+        <div class="dropdown-column">
+          <h3>GALLERY</h3>
+          <a routerLink="/gallery/grid">Grid Gallery</a>
+        </div>
+
+      </div>
     </div>
   
     <i class="bi bi-list"></i>

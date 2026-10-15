@@ -1,0 +1,102 @@
+:host {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #444444;
+  border-top: 1px solid #444444;
+}
+
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 156px;
+  padding: 35px 20px;
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: serif;
+}
+
+.like-badge {
+  background-color: #4267b2;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.like-item{
+    display: flex;
+}
+
+.count {
+  color: #ffffff;
+  padding: 1px 4px;
+  font-size: 20px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-box {
+  background-color: #444444;
+  color: #ffffff;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.contact-item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icon {
+  background-color: #444444;
+  color: #ffffff;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #ffeb3b;
+  color: #1a1a1a;
+}
