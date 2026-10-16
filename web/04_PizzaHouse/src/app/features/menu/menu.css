@@ -1,0 +1,90 @@
+.menu-page {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 72px 24px 96px;
+}
+
+.menu-heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.menu-heading .eyebrow {
+  margin-bottom: 8px;
+  color: var(--color-purple);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.menu-heading h1 {
+  margin: 0 0 12px;
+  color: var(--color-gray-950);
+  font-size: 40px;
+}
+
+.menu-heading > p:last-child {
+  color: var(--color-gray-700);
+  font-size: 16px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.menu-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  color: var(--color-white);
+  background: var(--color-gray-900);
+}
+
+.menu-card::after {
+  position: absolute;
+  inset: 50% 0 0;
+  content: '';
+  background: linear-gradient(transparent, rgb(0 0 0 / 65%));
+}
+
+.menu-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.04);
+}
+
+.menu-card span {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  bottom: 18px;
+  left: 20px;
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-page {
+    padding: 52px 18px 64px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}

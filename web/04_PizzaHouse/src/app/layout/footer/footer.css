@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  background-color: #333333; /* Fondo oscuro del footer */
-  color: #a0a0a0;
+  background-color: var(--color-gray-900);
+  color: var(--color-gray-500);
   font-family: sans-serif;
 }

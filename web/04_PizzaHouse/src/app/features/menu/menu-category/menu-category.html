@@ -1,0 +1,16 @@
+<main class="menu-category-page">
+  <a class="back-link" routerLink="/menu">
+    <i class="bi bi-arrow-left"></i>
+    All menu categories
+  </a>
+
+  <section class="category-hero">
+    <img [src]="category.image" [alt]="category.title" />
+    <div class="category-copy">
+      <p class="eyebrow">PIZZA HOUSE MENU</p>
+      <h1>{{ category.title }}</h1>
+      <p>Explore the {{ category.title.toLowerCase() }} selection at PizzaHouse.</p>
+      <a class="contact-link" routerLink="/pages/contacts">Contact us</a>
+    </div>
+  </section>
+</main>

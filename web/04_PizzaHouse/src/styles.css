@@ -1,30 +1,235 @@
-@import "bootstrap-icons/font/bootstrap-icons.css";
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+:root {
+  --color-purple: #6046b6;
+  --color-green: #31af36;
+  --color-yellow: #ffdf3f;
+  --color-white: #fff;
+  --color-gray-50: #f8f9fa;
+  --color-gray-100: #f2f2f2;
+  --color-gray-200: #e2e2e2;
+  --color-gray-300: #ccc;
+  --color-gray-400: #aaa;
+  --color-gray-500: #a0a0a0;
+  --color-gray-600: #888;
+  --color-gray-700: #777;
+  --color-gray-800: #555;
+  --color-gray-850: #444;
+  --color-gray-900: #333;
+  --color-gray-950: #1a1a1a;
+}
 
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
 }
 
 * {
-  scrollbar-color: gray white;
+  scrollbar-color: var(--color-gray-600) var(--color-white);
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, span {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Texto normal */
-p, a, span {
+img,
+video {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  margin: 0;
+  padding: 0;
+  font-family:
+    Roboto,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+}
+
+p,
+a,
+span {
   font-size: clamp(12px, 1vw, 14px);
 }
 
-/* Títulos */
-h1 { font-size: clamp(24px, 3vw, 40px); }
-h2 { font-size: clamp(22px, 2.5vw, 32px); }
-h3 { font-size: clamp(14px, 2vw, 18px); }
-h4 { font-size: clamp(18px, 1.8vw, 24px); }
-h5 { font-size: clamp(16px, 1.5vw, 20px); }
-h6 { font-size: clamp(14px, 1.2vw, 18px); }
+h1 {
+  font-size: clamp(24px, 3vw, 40px);
+}
+h2 {
+  font-size: clamp(22px, 2.5vw, 32px);
+}
+h3 {
+  font-size: clamp(14px, 2vw, 18px);
+}
+h4 {
+  font-size: clamp(18px, 1.8vw, 24px);
+}
+h5 {
+  font-size: clamp(16px, 1.5vw, 20px);
+}
+h6 {
+  font-size: clamp(14px, 1.2vw, 18px);
+}
+
+.route-page {
+  width: min(1120px, 100%);
+  min-height: 380px;
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+}
+
+.route-page .eyebrow {
+  margin-bottom: 10px;
+  color: var(--color-purple);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.route-page h1 {
+  margin: 0 0 18px;
+  color: var(--color-gray-950);
+  font-size: clamp(30px, 4vw, 44px);
+}
+
+.route-page h2 {
+  margin: 0 0 10px;
+  color: var(--color-gray-900);
+  font-size: 20px;
+}
+
+.route-page p,
+.route-page li {
+  color: var(--color-gray-700);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.route-page a {
+  color: var(--color-purple);
+}
+
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.route-card {
+  padding: 22px;
+  border: 1px solid var(--color-gray-200);
+  background: var(--color-white);
+}
+
+.route-card p {
+  margin: 0;
+}
+
+.route-number {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--color-purple);
+  font-size: 28px;
+}
+
+.route-list {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0 0;
+  padding-left: 22px;
+}
+
+.route-button {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border: 0;
+  background: var(--color-yellow);
+  color: var(--color-gray-950) !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.route-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.route-page details {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.route-page summary {
+  color: var(--color-gray-900);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.route-page table {
+  width: 100%;
+  margin-top: 24px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.route-page th,
+.route-page td {
+  padding: 12px;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.route-page th {
+  color: var(--color-gray-950);
+}
+
+.route-page progress {
+  width: 100%;
+  accent-color: var(--color-purple);
+}
+
+.route-page form {
+  display: grid;
+  max-width: 640px;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.route-page input,
+.route-page textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-gray-200);
+  font: inherit;
+}
+
+@media (max-width: 700px) {
+  .route-page {
+    min-height: 320px;
+    padding: 48px 18px 64px;
+  }
+
+  .route-grid {
+    grid-template-columns: 1fr;
+  }
+}

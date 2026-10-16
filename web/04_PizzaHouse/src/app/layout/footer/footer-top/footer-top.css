@@ -2,28 +2,38 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
-  height: 312px;
+  gap: 36px 28px;
   padding: 60px 20px;
 }
 
 .footer-col {
-  flex: 1;
-  min-width: 250px;
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.footer-col:nth-child(1) {
+  flex-grow: 1;
+}
+
+.footer-col:nth-child(2) {
+  flex-grow: 1;
+}
+
+.footer-col:nth-child(3) {
+  flex-grow: 1.3;
 }
 
 .footer-col h3 {
-  color: #ffffff;
-  font-size: 20px;
+  color: var(--color-white);
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
 }
 
 .links-grid {
   display: flex;
-  gap: 40px;
 }
 
 .links-grid ul {
@@ -34,22 +44,23 @@
 
 .links-grid li {
   margin-bottom: 12px;
+  min-width: 145px;
 }
 
 .links-grid a {
-  color: #cccccc;
+  color: var(--color-gray-300);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 
 .links-grid a:hover {
-  color: #ffeb3b;
+  color: var(--color-yellow);
 }
 
 .newsletter-col p {
-  color: #aaaaaa;
-  font-size: 14px;
+  color: var(--color-gray-400);
+  font-size: 15px;
   margin-bottom: 20px;
 }
 
@@ -61,20 +72,23 @@
 .newsletter-form input {
   flex: 1;
   padding: 12px 15px;
-  background-color: #444444;
+  background-color: var(--color-gray-850);
   border: none;
-  color: #ffffff;
+  color: var(--color-white);
+  height: 60px;
+  width: 0;
+  min-width: 0;
   outline: none;
   font-size: 14px;
 }
 
 .newsletter-form input::placeholder {
-  color: #aaaaaa;
+  color: var(--color-gray-400);
 }
 
 .newsletter-form button {
-  background-color: #ffeb3b;
-  color: #1a1a1a;
+  background-color: var(--color-yellow);
+  color: var(--color-gray-950);
   border: none;
   padding: 12px 20px;
   font-weight: 700;
@@ -85,5 +99,30 @@
 }
 
 .newsletter-form button:hover {
-  background-color: #fbc02d;
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+@media (max-width: 600px) {
+  .footer-top {
+    padding: 44px 20px;
+    gap: 32px;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 16px;
+  }
+
+  .links-grid {
+    flex-wrap: wrap;
+    gap: 0 18px;
+  }
+
+  .links-grid li {
+    min-width: 0;
+  }
+
+  .newsletter-form input {
+    height: 52px;
+  }
 }

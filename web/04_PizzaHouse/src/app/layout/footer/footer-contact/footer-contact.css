@@ -1,8 +1,8 @@
 :host {
   display: block;
   width: 100%;
-  border-bottom: 1px solid #444444;
-  border-top: 1px solid #444444;
+  border-bottom: 1px solid var(--color-gray-850);
+  border-top: 1px solid var(--color-gray-850);
 }
 
 .footer-contact {
@@ -13,7 +13,7 @@
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  height: 156px;
+  min-height: 156px;
   padding: 35px 20px;
 }
 
@@ -21,10 +21,11 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  cursor: pointer;
 }
 
 .logo-text {
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 28px;
   font-weight: 700;
   font-style: italic;
@@ -33,7 +34,7 @@
 
 .like-badge {
   background-color: #4267b2;
-  color: #ffffff;
+  color: var(--color-white);
   padding: 4px 10px;
   border-radius: 3px;
   font-size: 12px;
@@ -42,12 +43,13 @@
   gap: 5px;
 }
 
-.like-item{
-    display: flex;
+.like-item {
+  display: flex;
+  cursor: pointer;
 }
 
 .count {
-  color: #ffffff;
+  color: var(--color-white);
   padding: 1px 4px;
   font-size: 20px;
   border-radius: 2px;
@@ -61,8 +63,8 @@
 }
 
 .icon-box {
-  background-color: #444444;
-  color: #ffffff;
+  background-color: var(--color-gray-850);
+  color: var(--color-white);
   width: 38px;
   height: 38px;
   display: flex;
@@ -72,10 +74,14 @@
 }
 
 .contact-item a {
-  color: #ffffff;
+  color: var(--color-white);
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
+}
+
+a:hover {
+  color: var(--color-yellow);
 }
 
 .social-links {
@@ -84,8 +90,8 @@
 }
 
 .social-icon {
-  background-color: #444444;
-  color: #ffffff;
+  background-color: var(--color-gray-850);
+  color: var(--color-white);
   width: 38px;
   height: 38px;
   display: flex;
@@ -97,6 +103,24 @@
 }
 
 .social-icon:hover {
-  background-color: #ffeb3b;
-  color: #1a1a1a;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+@media (max-width: 700px) {
+  .footer-contact {
+    min-height: 0;
+    justify-content: flex-start;
+    padding: 28px 20px;
+  }
+
+  .brand-section {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .contact-item {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
 }

@@ -9,7 +9,7 @@
   display: flex;
   width: 100%;
   flex-direction: row;
-  background-color: #EBEBEB;
+  background-color: var(--color-gray-100);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -19,18 +19,13 @@
   display: flex;
   flex: 0 0 36.5%;
   min-width: 0;
-  background-color: white;
+  background-color: var(--color-white);
 
-  clip-path: polygon(
-    0 0,
-    95% 0,
-    100% 85%,
-    0 85%
-  );
-  
+  clip-path: polygon(0 0, 95% 0, 100% 85%, 0 85%);
+
   animation: logo-scroll linear both;
   animation-timeline: scroll();
-  animation-range: 0px 150px;
+  animation-range: 0px 100px;
 }
 
 @keyframes logo-scroll {
@@ -55,4 +50,30 @@
   display: flex;
   width: 100%;
   box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .header-container {
+    flex-wrap: wrap;
+    align-items: stretch;
+    position: sticky;
+    top: 50px;
+    z-index: 1000;
+  }
+
+  .header-logo {
+    flex: 0 0 100%;
+    min-height: 82px;
+    clip-path: none;
+    animation: none;
+  }
+
+  .header-right {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .header-contact {
+    display: none;
+  }
 }
