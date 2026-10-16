@@ -1,51 +1,97 @@
 <div class="navbar">
-  <nav class="navigation">
-    <div class="button" >
+  <nav class="navigation" [class.open]="isMenuOpen" (click)="handleNavigationClick($event)">
+    <div class="button" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
       <div class="transparent"></div>
       <a routerLink="/home">Home</a>
       <div class="selector"></div>
     </div>
 
-    <div class="button">
+    <div class="button" routerLinkActive="active">
       <div class="transparent"></div>
       <a routerLink="/about">About us</a>
       <div class="selector"></div>
     </div>
 
-    <div class="button">
+    <div class="button" routerLinkActive="active">
       <div class="transparent"></div>
       <a routerLink="/menu">Menu</a>
       <div class="selector"></div>
     </div>
 
-    <div class="button">
+    <div class="button" routerLinkActive="active" [class.expanded]="openSubmenu === 'news'">
       <div class="transparent"></div>
       <a>News</a>
+      <button
+        class="submenu-toggle"
+        type="button"
+        aria-label="Toggle News options"
+        aria-controls="news-dropdown"
+        [attr.aria-expanded]="openSubmenu === 'news'"
+        (click)="toggleSubmenu('news')"
+      >
+        <i
+          class="bi"
+          [class.bi-chevron-down]="openSubmenu !== 'news'"
+          [class.bi-chevron-up]="openSubmenu === 'news'"
+        ></i>
+      </button>
       <div class="selector"></div>
-      <div class="dropdown">
+      <div class="dropdown" id="news-dropdown">
         <a routerLink="/news/grid-blog">GRID BLOG</a>
         <a routerLink="/news/masonry-blog">MASONRY BLOG</a>
         <a routerLink="/news/blog-post">BLOG POST</a>
       </div>
     </div>
 
-    <div class="button">
+    <div class="button" routerLinkActive="active" [class.expanded]="openSubmenu === 'shop'">
       <div class="transparent"></div>
       <a routerLink="/shop">Shop</a>
+      <button
+        class="submenu-toggle"
+        type="button"
+        aria-label="Toggle Shop options"
+        aria-controls="shop-dropdown"
+        [attr.aria-expanded]="openSubmenu === 'shop'"
+        (click)="toggleSubmenu('shop')"
+      >
+        <i
+          class="bi"
+          [class.bi-chevron-down]="openSubmenu !== 'shop'"
+          [class.bi-chevron-up]="openSubmenu === 'shop'"
+        ></i>
+      </button>
       <div class="selector"></div>
-      <div class="dropdown">
+      <div class="dropdown" id="shop-dropdown">
         <a routerLink="/shop/single-product">SINGLE PRODUCT</a>
         <a routerLink="/shop/checkout">CHECKOUT</a>
         <a routerLink="/shop/cart-page">CART PAGE</a>
       </div>
     </div>
 
-    <div class="button pages-button">
+    <div
+      class="button pages-button"
+      routerLinkActive="active"
+      [class.expanded]="openSubmenu === 'pages'"
+    >
       <div class="transparent"></div>
       <a>Pages</a>
+      <button
+        class="submenu-toggle"
+        type="button"
+        aria-label="Toggle Pages options"
+        aria-controls="pages-dropdown"
+        [attr.aria-expanded]="openSubmenu === 'pages'"
+        (click)="toggleSubmenu('pages')"
+      >
+        <i
+          class="bi"
+          [class.bi-chevron-down]="openSubmenu !== 'pages'"
+          [class.bi-chevron-up]="openSubmenu === 'pages'"
+        ></i>
+      </button>
       <div class="selector"></div>
 
-      <div class="dropdown pages-dropdown">
+      <div class="dropdown pages-dropdown" id="pages-dropdown">
         <div class="dropdown-column">
           <h3>SERVICES</h3>
           <a routerLink="/services">Services</a>
@@ -63,6 +109,7 @@
           <a routerLink="/pages/icon-lists">Icon lists</a>
           <a routerLink="/pages/search-results">Search results</a>
           <a routerLink="/pages/privacy-policy">Privacy policy</a>
+          <a routerLink="/pages/faq">FAQ</a>
           <a routerLink="/pages/contacts">Contacts</a>
         </div>
 
@@ -81,10 +128,16 @@
           <h3>GALLERY</h3>
           <a routerLink="/gallery/grid">Grid Gallery</a>
         </div>
-
       </div>
     </div>
-  
-    <i class="bi bi-list"></i>
   </nav>
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-label="Toggle navigation"
+    [attr.aria-expanded]="isMenuOpen"
+    (click)="toggleMenu()"
+  >
+    <i class="bi" [class.bi-list]="!isMenuOpen" [class.bi-x-lg]="isMenuOpen"></i>
+  </button>
 </div>

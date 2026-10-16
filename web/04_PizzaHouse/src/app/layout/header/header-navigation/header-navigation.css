@@ -2,12 +2,13 @@
   display: flex;
   width: 100%;
   height: 88.11px;
-  padding-left: 90px;
+  padding: 0 24px 0 clamp(24px, 6vw, 90px);
 }
 
 .navigation {
   display: flex;
-  width: 67%;
+  width: 100%;
+  max-width: 900px;
   height: 100%;
   justify-content: space-between;
   align-items: stretch;
@@ -21,22 +22,30 @@
 }
 
 .button a {
-  color: black;
+  color: var(--color-gray-950);
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
   margin-top: auto;
   margin-bottom: auto;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family:
+    Roboto,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
 }
 
 .selector {
   visibility: hidden;
   width: 100%;
   height: 6px;
+  margin-bottom: 5px;
   flex-shrink: 0;
   margin-top: auto;
-  background-color: #6046b6;
+  background-color: var(--color-purple);
 }
 
 .dropdown {
@@ -44,8 +53,8 @@
   top: 100%;
   left: 0;
   width: 290px;
-  background-color: white;
-  border-bottom: 7px solid #6042b5;
+  background-color: var(--color-white);
+  border-bottom: 7px solid var(--color-purple);
   z-index: 1000;
   margin: 0px;
   opacity: 0;
@@ -58,23 +67,26 @@
     visibility 0.2s ease;
 }
 
-/* Mostrarlo al hacer hover */
+.navigation .button:nth-last-child(-n + 3) .dropdown {
+  right: 0;
+  left: auto;
+}
+
 .button:hover .dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-/* Enlaces del menú */
 .dropdown a {
   display: block;
   padding: 22px 30px;
-  color: #111;
-  background-color: white;
+  color: var(--color-gray-950);
+  background-color: var(--color-white);
   text-decoration: none;
   font-size: 13px;
   letter-spacing: 1px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-gray-200);
 }
 
 .dropdown a:last-child {
@@ -82,7 +94,7 @@
 }
 
 .dropdown a:hover {
-  background-color: #f7f7f7;
+  background-color: var(--color-gray-50);
 }
 
 .dropdown-column {
@@ -93,19 +105,52 @@
 
 .dropdown-column h3 {
   margin: 15px 0 10px;
-  color: #6042b5;
+  color: var(--color-purple);
   font-size: 17px;
   font-weight: 500;
 }
 
 .dropdown-column a {
-  color: #111;
+  color: var(--color-gray-950);
   text-decoration: none;
   font-size: 16px;
 }
 
 .dropdown-column a:hover {
-  color: #6042b5;
+  color: var(--color-purple);
+}
+
+.pages-dropdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  width: min(920px, calc(100vw - 40px));
+  padding: 22px 24px 24px;
+}
+
+.pages-dropdown .dropdown-column {
+  gap: 4px;
+  min-width: 0;
+}
+
+.pages-dropdown .dropdown-column h3 {
+  margin: 0 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-gray-200);
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.pages-dropdown .dropdown-column a {
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-gray-200);
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.pages-dropdown .dropdown-column a:last-child {
+  border-bottom: 0;
 }
 
 .transparent {
@@ -114,17 +159,175 @@
 }
 
 .button:hover .selector,
-.selected {
+.button.active .selector {
   visibility: visible;
 }
 
 i {
-  color: black;
+  color: var(--color-gray-950);
   cursor: pointer;
   font-size: 38px;
   align-self: center;
 }
 
 i:hover {
-  color: yellow;
+  color: var(--color-yellow);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.submenu-toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    height: auto;
+    min-height: 68px;
+    padding: 0 20px;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: var(--color-gray-900);
+  }
+
+  .menu-toggle i {
+    font-size: 28px;
+  }
+
+  .navigation {
+    position: absolute;
+    display: none;
+    height: auto;
+    top: calc(100% + 8px);
+    right: 12px;
+    z-index: 1002;
+    width: min(420px, calc(100% - 24px));
+    max-height: calc(100svh - 220px);
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--color-white);
+    box-shadow: 0 12px 24px rgb(0 0 0 / 14%);
+    border: 1px solid var(--color-gray-200);
+  }
+
+  .navigation.open {
+    display: flex;
+  }
+
+  .navigation .button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 58px;
+    align-items: stretch;
+    border-bottom: 1px solid var(--color-gray-200);
+  }
+
+  .navigation .button:nth-child(5) {
+    order: 1;
+  }
+
+  .navigation .button:nth-child(4) {
+    order: 2;
+  }
+
+  .navigation .button:nth-child(6) {
+    order: 3;
+  }
+
+  .navigation .button > a {
+    flex: 1 1 0;
+    min-height: 58px;
+    margin: 0;
+    padding: 18px 24px;
+    font-size: 16px;
+  }
+
+  .navigation .submenu-toggle {
+    display: inline-flex;
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: transparent;
+    color: var(--color-gray-900);
+  }
+
+  .navigation .submenu-toggle i {
+    font-size: 16px;
+  }
+
+  .navigation .transparent,
+  .navigation .selector {
+    display: none;
+  }
+
+  .navigation .dropdown {
+    position: static;
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 0 0 8px 16px;
+    border: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .navigation .button.expanded > .dropdown {
+    display: block;
+  }
+
+  .navigation .dropdown a {
+    display: flex;
+    min-height: 48px;
+    align-items: center;
+    padding: 14px 24px;
+  }
+
+  .navigation .dropdown-column {
+    gap: 2px;
+  }
+
+  .navigation .dropdown-column h3 {
+    margin: 16px 24px 8px;
+  }
+
+  .navigation .dropdown-column a {
+    min-height: 46px;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .navigation .pages-dropdown {
+    grid-template-columns: 1fr;
+    padding: 0 0 8px 16px;
+  }
+
+  .navigation .pages-dropdown .dropdown-column h3 {
+    margin: 14px 22px 6px;
+  }
+
+  .navigation .pages-dropdown .dropdown-column a {
+    min-height: 46px;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
 }

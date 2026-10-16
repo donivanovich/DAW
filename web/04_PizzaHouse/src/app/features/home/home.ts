@@ -10,7 +10,17 @@ import { BookTables } from './book-tables/book-tables';
 import { Benefits } from './benefits/benefits';
 
 @Component({
-  imports: [HeroCarousel, MenuCategories, BannerAtmosphere, PizzaSelection, BannerSalads, Opinions, Gallery, BookTables, Benefits],
+  imports: [
+    HeroCarousel,
+    MenuCategories,
+    BannerAtmosphere,
+    PizzaSelection,
+    BannerSalads,
+    Opinions,
+    Gallery,
+    BookTables,
+    Benefits,
+  ],
   selector: 'app-home',
   styleUrl: './home.css',
   templateUrl: './home.html',

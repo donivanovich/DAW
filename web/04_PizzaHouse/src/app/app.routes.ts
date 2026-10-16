@@ -1,29 +1,37 @@
-
 import { Routes } from '@angular/router';
 
+const menuCategoryRoutes: Routes = [
+  'pizzas',
+  'burgers',
+  'salads',
+  'drinks',
+  'seafood',
+  'desserts',
+].map((category) => ({
+  path: `menu/${category}`,
+  loadComponent: () =>
+    import('./features/menu/menu-category/menu-category').then((m) => m.MenuCategory),
+  data: { category },
+}));
+
 export const routes: Routes = [
-  // Main pages
   {
     path: 'home',
-    loadComponent: () =>
-      import('./features/home/home').then((m) => m.Home),
+    loadComponent: () => import('./features/home/home').then((m) => m.Home),
   },
   {
     path: 'about',
-    loadComponent: () =>
-      import('./features/about/about').then((m) => m.About),
+    loadComponent: () => import('./features/about/about').then((m) => m.About),
   },
   {
     path: 'menu',
-    loadComponent: () =>
-      import('./features/menu/menu').then((m) => m.Menu),
+    loadComponent: () => import('./features/menu/menu').then((m) => m.Menu),
   },
+  ...menuCategoryRoutes,
 
-  // News
   {
     path: 'news/grid-blog',
-    loadComponent: () =>
-      import('./features/news/grid-blog/grid-blog').then((m) => m.GridBlog),
+    loadComponent: () => import('./features/news/grid-blog/grid-blog').then((m) => m.GridBlog),
   },
   {
     path: 'news/masonry-blog',
@@ -32,15 +40,12 @@ export const routes: Routes = [
   },
   {
     path: 'news/blog-post',
-    loadComponent: () =>
-      import('./features/news/blog-post/blog-post').then((m) => m.BlogPost),
+    loadComponent: () => import('./features/news/blog-post/blog-post').then((m) => m.BlogPost),
   },
 
-  // Shop
   {
     path: 'shop',
-    loadComponent: () =>
-      import('./features/shop/shop').then((m) => m.Shop),
+    loadComponent: () => import('./features/shop/shop').then((m) => m.Shop),
   },
   {
     path: 'shop/single-product',
@@ -49,16 +54,13 @@ export const routes: Routes = [
   },
   {
     path: 'shop/checkout',
-    loadComponent: () =>
-      import('./features/shop/checkout/checkout').then((m) => m.Checkout),
+    loadComponent: () => import('./features/shop/checkout/checkout').then((m) => m.Checkout),
   },
   {
     path: 'shop/cart-page',
-    loadComponent: () =>
-      import('./features/shop/cart-page/cart-page').then((m) => m.CartPage),
+    loadComponent: () => import('./features/shop/cart-page/cart-page').then((m) => m.CartPage),
   },
 
-  // Services
   {
     path: 'services',
     loadComponent: () =>
@@ -82,10 +84,11 @@ export const routes: Routes = [
   {
     path: 'services/single-service',
     loadComponent: () =>
-      import('./features/pages/services/single-service/single-service').then((m) => m.SingleService),
+      import('./features/pages/services/single-service/single-service').then(
+        (m) => m.SingleService,
+      ),
   },
 
-  // Additional Pages
   {
     path: 'pages/404',
     loadComponent: () =>
@@ -109,12 +112,20 @@ export const routes: Routes = [
   {
     path: 'pages/search-results',
     loadComponent: () =>
-      import('./features/pages/additional-pages/search-results/search-results').then((m) => m.SearchResults),
+      import('./features/pages/additional-pages/search-results/search-results').then(
+        (m) => m.SearchResults,
+      ),
   },
   {
     path: 'pages/privacy-policy',
     loadComponent: () =>
-      import('./features/pages/additional-pages/privacy-policy/privacy-policy').then((m) => m.PrivacyPolicy),
+      import('./features/pages/additional-pages/privacy-policy/privacy-policy').then(
+        (m) => m.PrivacyPolicy,
+      ),
+  },
+  {
+    path: 'pages/faq',
+    loadComponent: () => import('./features/pages/additional-pages/faq/faq').then((m) => m.Faq),
   },
   {
     path: 'pages/contacts',
@@ -122,7 +133,6 @@ export const routes: Routes = [
       import('./features/pages/additional-pages/contacts/contacts').then((m) => m.Contacts),
   },
 
-  // Elements
   {
     path: 'elements/typography',
     loadComponent: () =>
@@ -130,18 +140,18 @@ export const routes: Routes = [
   },
   {
     path: 'elements/buttons',
-    loadComponent: () =>
-      import('./features/pages/elements/buttons/buttons').then((m) => m.Buttons),
+    loadComponent: () => import('./features/pages/elements/buttons/buttons').then((m) => m.Buttons),
   },
   {
     path: 'elements/forms',
-    loadComponent: () =>
-      import('./features/pages/elements/forms/forms').then((m) => m.Forms),
+    loadComponent: () => import('./features/pages/elements/forms/forms').then((m) => m.Forms),
   },
   {
     path: 'elements/tabs-accordions',
     loadComponent: () =>
-      import('./features/pages/elements/tabs-and-accordions/tabs-and-accordions').then((m) => m.TabsAndAccordions),
+      import('./features/pages/elements/tabs-and-accordions/tabs-and-accordions').then(
+        (m) => m.TabsAndAccordions,
+      ),
   },
   {
     path: 'elements/progress-bars',
@@ -155,18 +165,15 @@ export const routes: Routes = [
   },
   {
     path: 'elements/tables',
-    loadComponent: () =>
-      import('./features/pages/elements/tables/tables').then((m) => m.Tables),
+    loadComponent: () => import('./features/pages/elements/tables/tables').then((m) => m.Tables),
   },
 
-  // Gallery
   {
     path: 'gallery/grid',
     loadComponent: () =>
       import('./features/pages/gallery/grid-gallery/grid-gallery').then((m) => m.GridGallery),
   },
 
-  // Redirects
   {
     path: '',
     pathMatch: 'full',

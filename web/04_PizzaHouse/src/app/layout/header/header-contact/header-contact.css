@@ -2,15 +2,10 @@
   display: flex;
   width: 100%;
   height: 56px;
-  gap: 25px ;
+  gap: 25px;
   padding-left: 150px;
-  background-color: white;
-  clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 100%,
-      1.25% 100%
-  );
+  background-color: var(--color-white);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 1.25% 100%);
 }
 
 .buttons-contacts {
@@ -32,12 +27,19 @@
   cursor: pointer;
 }
 
-.contact:hover p{
-  color: rgb(115, 61, 167);
+.contact:hover p {
+  color: var(--color-purple);
 }
 
-.contact p{
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+.contact p {
+  font-family:
+    Roboto,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
   font-size: 16px;
 }
 
@@ -53,16 +55,16 @@
 }
 
 .conection:hover i {
-  color: white;
+  color: var(--color-white);
   transition: 0.5s;
 }
 
 .conection:hover {
-  background-color: rgb(115, 61, 167);
+  background-color: var(--color-purple);
 }
 
-.conection{
-  background-color: #EBEBEB;
+.conection {
+  background-color: var(--color-gray-100);
   width: 28px;
   height: 28px;
   border: 0px;

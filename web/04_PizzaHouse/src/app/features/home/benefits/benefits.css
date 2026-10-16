@@ -1,6 +1,6 @@
 .benefits {
   width: 100%;
-  background-color: #fcfcfc;
+  background-color: var(--color-white);
   padding: 60px 20px;
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 .card {
-  width: clamp(250px, 100%, 270px);
+  width: min(270px, 100%);
   max-width: 270px;
   height: 329px;
   max-height: 329px;
@@ -37,7 +37,7 @@
 }
 
 .card h3 {
-  color: #1a1a1a;
+  color: var(--color-gray-950);
   font-size: 24px;
   font-weight: 500;
   margin: 10px 0 0 0;
@@ -45,7 +45,7 @@
 }
 
 .card p {
-  color: #777777;
+  color: var(--color-gray-700);
   font-size: 16px;
   max-width: 234px;
   line-height: 1.5;
@@ -63,13 +63,13 @@
 
 .icon-wrapper i {
   font-size: 38px;
-  color: #6a49aa;
+  color: var(--color-purple);
   transition: color 0.3s ease;
 }
 
 .decoration-line {
   display: inline-block;
-  background-color: #eee9f7;
+  background-color: var(--color-gray-200);
   width: 2px;
   border-radius: 1px;
   transition: background-color 0.3s ease;
@@ -84,18 +84,18 @@
 }
 
 .card:hover {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.06);
 }
 
 .card:hover .icon-wrapper i {
-  color: #52c293;
+  color: var(--color-green);
 }
 
 .card:hover .decoration-line {
-  background-color: #52c293;
+  background-color: var(--color-green);
 }
 
 .card:hover p {
-  color: #555555;
+  color: var(--color-gray-800);
 }
