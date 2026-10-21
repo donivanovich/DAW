@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\DES03_IntroducionAIoCeID\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\des03_introducionaioceid\\consoleapp1\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\EjercicioDI.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\des03_introducionaioceid\\consoleapp1\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\EjercicioDI.csproj|solutionrelative:consoleapp1\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\des03_introducionaioceid\\consoleapp1\\smsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\smsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\EjercicioDI.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\des03_introducionaioceid\\consoleapp1\\notificador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\EjercicioDI.csproj|solutionrelative:consoleapp1\\notificador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\des03_introducionaioceid\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\EjercicioDI.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\des03_introducionaioceid\\consoleapp1\\smsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\EjercicioDI.csproj|solutionrelative:consoleapp1\\smsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\des03_introducionaioceid\\consoleapp1\\notificador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\notificador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\EjercicioDI.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\des03_introducionaioceid\\consoleapp1\\imedioenvio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\EjercicioDI.csproj|solutionrelative:consoleapp1\\imedioenvio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\des03_introducionaioceid\\consoleapp1\\imedioenvio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\imedioenvio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\EjercicioDI.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\des03_introducionaioceid\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE0D6E0C-1772-4859-8C3D-DC0C90A79E9D}|ConsoleApp1\\EjercicioDI.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Notificador.cs",
               "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\DES03_IntroducionAIoCeID\\ConsoleApp1\\Notificador.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Notificador.cs",
@@ -42,12 +42,11 @@
               "RelativeToolTip": "ConsoleApp1\\Notificador.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T13:51:55.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T13:51:55.714Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SMSService.cs",
               "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\DES03_IntroducionAIoCeID\\ConsoleApp1\\SMSService.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\SMSService.cs",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "ConsoleApp1\\SMSService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T13:51:43.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T13:51:43.464Z"
             },
             {
               "$type": "Document",
@@ -73,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "IMedioEnvio.cs",
               "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\DES03_IntroducionAIoCeID\\ConsoleApp1\\IMedioEnvio.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\IMedioEnvio.cs",
@@ -81,12 +79,11 @@
               "RelativeToolTip": "ConsoleApp1\\IMedioEnvio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T13:51:24.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T13:51:24.52Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\DES03_IntroducionAIoCeID\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "ConsoleApp1\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T13:50:30.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T13:50:30.282Z"
             }
           ]
         }
