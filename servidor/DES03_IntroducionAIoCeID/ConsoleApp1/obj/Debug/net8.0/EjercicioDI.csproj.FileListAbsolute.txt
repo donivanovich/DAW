@@ -1,0 +1,15 @@
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\bin\Debug\net8.0\EjercicioDI.exe
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\bin\Debug\net8.0\EjercicioDI.deps.json
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\bin\Debug\net8.0\EjercicioDI.runtimeconfig.json
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\bin\Debug\net8.0\EjercicioDI.dll
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\bin\Debug\net8.0\EjercicioDI.pdb
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\obj\Debug\net8.0\EjercicioDI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\obj\Debug\net8.0\EjercicioDI.AssemblyInfoInputs.cache
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\obj\Debug\net8.0\EjercicioDI.AssemblyInfo.cs
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\obj\Debug\net8.0\EjercicioDI.csproj.CoreCompileInputs.cache
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\obj\Debug\net8.0\EjercicioDI.sourcelink.json
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\obj\Debug\net8.0\EjercicioDI.dll
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\obj\Debug\net8.0\refint\EjercicioDI.dll
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\obj\Debug\net8.0\EjercicioDI.pdb
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\obj\Debug\net8.0\EjercicioDI.genruntimeconfig.cache
+C:\Users\ivan.kosolovskyy_alu\Documents\DAW\servidor\DES03_IntroducionAIoCeID\ConsoleApp1\obj\Debug\net8.0\ref\EjercicioDI.dll
