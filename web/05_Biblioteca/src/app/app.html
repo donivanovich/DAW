@@ -1,0 +1,26 @@
+<header>
+  <h1>Biblioteca</h1>
+
+  <nav>
+    <a routerLink="/inicio" routerLinkActive="activo" [routerLinkActiveOptions]="{ exact: true }">
+      Inicio
+    </a>
+
+    <a routerLink="/libros" routerLinkActive="activo">
+      Libros
+    </a>
+
+    <a routerLink="/autores" routerLinkActive="activo"
+    >
+      Autores
+    </a>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <p>© 2026 Biblioteca. Todos los derechos reservados.</p>
+</footer>
