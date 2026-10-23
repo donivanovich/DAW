@@ -17,7 +17,7 @@ namespace POO2.Core
         public OficinaEnvio(IServicioEnvio servicioEnvio,  string codigoVerificacion)
         {
             this.codigoVerificacion = codigoVerificacion;
-            orders = CargarPedido();
+            orders = OficinaEnvioHelper.CargarPedidos();
 
             this.servicioEnvio = servicioEnvio;
 
@@ -36,27 +36,6 @@ namespace POO2.Core
             {
                 Console.WriteLine($"No se encontró un pedido con ID {idPedido}.");
             }
-        }
-
-        public static string GenerarCodigoVerificacion()
-        {
-            Random random = new Random();
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            return new string(Enumerable.Repeat(chars, 8)
-              .Select(s => s[random.Next(s.Length)]).ToArray());
-        }
-
-
-        private static List<Order> CargarPedido()
-        {
-            return
-            [
-                new(1, [], DateTime.Now, DateTime.Now.AddDays(7)),
-                new(2, [], DateTime.Now, DateTime.Now.AddDays(7)),
-                new(3, [], DateTime.Now, DateTime.Now.AddDays(7)),
-                new(4, [], DateTime.Now, DateTime.Now.AddDays(7)),
-                new(5, [], DateTime.Now, DateTime.Now.AddDays(7))
-            ];
         }
     }
 }
