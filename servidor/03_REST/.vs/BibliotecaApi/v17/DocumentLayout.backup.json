@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\03_rest\\des02_rest\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|solutionrelative:des02_rest\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\03_rest\\des02_rest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|solutionrelative:des02_rest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\03_rest\\des02_rest\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|solutionrelative:des02_rest\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\03_rest\\des02_rest\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|solutionrelative:des02_rest\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\03_rest\\des02_rest\\data\\bibliotecadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|solutionrelative:des02_rest\\data\\bibliotecadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\03_rest\\des02_rest\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|solutionrelative:des02_rest\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\03_rest\\des02_rest\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|solutionrelative:des02_rest\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|c:\\users\\ivan.kosolovskyy_alu\\documents\\daw\\servidor\\03_rest\\des02_rest\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F95A46-F662-4317-A829-BF629858D56F}|DES02_REST\\BibliotecaApi.csproj|solutionrelative:des02_rest\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Program.cs",
+              "RelativeDocumentMoniker": "DES02_REST\\Program.cs",
+              "ToolTip": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Program.cs",
+              "RelativeToolTip": "DES02_REST\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T14:22:05.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "DES02_REST\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "DES02_REST\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T14:21:46.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthorsController.cs",
+              "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Controllers\\AuthorsController.cs",
+              "RelativeDocumentMoniker": "DES02_REST\\Controllers\\AuthorsController.cs",
+              "ToolTip": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Controllers\\AuthorsController.cs",
+              "RelativeToolTip": "DES02_REST\\Controllers\\AuthorsController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwE0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T14:21:23.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "DES02_REST\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "DES02_REST\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T14:20:43.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BibliotecaData.cs",
+              "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Data\\BibliotecaData.cs",
+              "RelativeDocumentMoniker": "DES02_REST\\Data\\BibliotecaData.cs",
+              "ToolTip": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Data\\BibliotecaData.cs",
+              "RelativeToolTip": "DES02_REST\\Data\\BibliotecaData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T14:20:11.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "DES02_REST\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Models\\Category.cs",
+              "RelativeToolTip": "DES02_REST\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T14:19:30.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "DES02_REST\\Models\\Author.cs",
+              "ToolTip": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Models\\Author.cs",
+              "RelativeToolTip": "DES02_REST\\Models\\Author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T14:19:05.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "DES02_REST\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\ivan.kosolovskyy_alu\\Documents\\DAW\\servidor\\03_REST\\DES02_REST\\Models\\Book.cs",
+              "RelativeToolTip": "DES02_REST\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T14:18:40.123Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
